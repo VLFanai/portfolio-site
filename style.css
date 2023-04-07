@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400&display=swap');
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+:root {
+    --bg-light-blue: #FAFAFF;
+    --accent-orange: #ff6700;
+    --main-black: #1c1c1c;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--bg-light-blue);
+    max-width: 100%;
+    overflow-x: hidden;
+}
+button:hover {
+    cursor: pointer;
+}
+
+
+    /* Navigation Styling */
+    header nav {
+        position: relative;
+        /* border: 2px solid lime; */
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding: 1rem 1.5rem;
+    }  
+    header nav h1 {
+        margin-right: auto;
+        font-size: 2rem;
+        
+    }
+    header nav h1 span {
+        color: var(--accent-orange);
+    }
+    header nav a {
+        position: relative;
+        text-decoration: none;
+        margin: 0 1rem;
+        font-size: 1rem;
+        z-index: 1;
+    color: white;
+}
+/* Header Intro Styling */
+header section .intro {
+    position: absolute;
+    top: 0;
+    display: flex;
+}
+header .intro .desc {
+    display: block;
+    position: relative;
+    font-size: 1.7rem;
+    top: 4rem;
+    left: 5.6rem;
+    z-index: 2;
+}
+header .intro button {
+    color: white;
+    background-color: black;
+    padding: 4px 12px;
+    margin-top: 23px;
+    font-size: 16px;
+    border: none;
+}
+header .intro h1 {
+    font-size: 12px;
+    margin-bottom: 23px;
+}
+header .intro img {
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 4.5rem;
+    right: 7vw;
+    width: 600px;
+    box-shadow: 80px -73px 0 black,
+        3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+header .intro h2 {
+    position: relative;
+    display: block;
+}
+header .intro span {
+    color: var(--accent-orange);
+    overflow: hidden;
+    font-family: 'JetBrains Mono', monospace;
+}
+header #about {
+    position: relative;
+    background-color: black;
+    margin-top: 12rem;
+    padding: 2rem 2rem;
+    padding-bottom: 5rem;
+}
+header .about-me {
+    color: white;
+    display: block;
+    justify-content: center;
+}
+header .about-me {
+    text-align: center;
+}
+header .about-me h1 {
+    margin-bottom: 2rem;
+}
+/* Main Section About me */
+main #projects {
+    display: contents;
+    text-align: center;
+}
+main #projects .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+}
+.project-grid-box {
+    /* border: 2px solid red; */
+    padding: 2rem;
+    background: #5A6170;
+    position: relative;
+    border-radius: 12px;
+    width: 220px;
+    height: 300px;
+}
+main section .projects-grid .project-grid-box button {
+    position: absolute;
+    display: flex;
+    bottom: 30px;
+    left: calc(30% - 2px);
+    padding: 10px 15px;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    background-color: black;
+}
+main section .projects-grid .project-grid-box button:hover {
+    text-decoration: underline;
+    color: #5A6170;
+    box-shadow: 0px 0px 15px #ff9a57;
+    transition: 0.3s ease-in-out;
+}
+/* Style the progress bar container */
+.progress {
+    width: 100%;
+    background-color: #ddd;
+  }
+  
+  /* Style the progress bar */
+  .progress-bar {
+    height: 20px;
+    background-color: #4CAF50;
+    width: 0%;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+  }
+  
+  /* Style the progress bar text */
+  .progress-bar span {
+    margin-left: 2px;
+  }
+/* Footer Section Styling */
+footer {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin: 0 30px;
+    background-color: #000;
+    width: 100vw;
+    border: 2px solid blue;
+    color: #a2b5cd;
+}
+footer a {
+    color: #a2b5cd;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #ff6700;
+    text-decoration: underline;
+    transition: 0.3s ease-out;
+}
+footer.top {
+    border-bottom: 2px solid #3a4f6a;
+    padding-bottom: 20px;
+}
+footer.top .links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+footer.bottom {
+    padding: 15px 12px;
+    justify-content: space-between;
+}
+footer .links > div {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+footer h2 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #171717;
+}
+footer .legal {
+    font-size: 12px;
+}
+footer .legal > a {
+    margin: 0 4px;
+}
+footer .legal > span {
+    margin-right: 10px;
+}
+footer.bottom .links {
+    display: flex;
+    gap: 10px;
+}
+footer.bottom .links > a {
+    font-size: 24px;
+}
+
+/* Media Styling */
+/* Full Screen */
+@media (width < 620px) {
+    footer {
+        /* width: 100vw; */
+        margin-left: 0;
+        padding-left: 2rem;
+        flex-direction: column;
+    }
+    footer.bottom {
+        gap: 16px;
+        flex-direction: column-reverse;
+    }
+}
+
+/* Medium Screen */
+@media (width >= 620px) {
+    footer {
+        margin: 0 auto;
+        /* max-width: 600px; */
+        padding: 12px 20px;
+        padding-left: 10vw;
+    }
+}
+
+
+/* Small Screen */
+@media (width < 420px) {
+    footer {
+        text-align: center;
+        align-items: center;
+        padding: 0 2rem;
+    }
+    footer.top .links {
+        grid-template-columns: 1fr;
+    }
+    footer.bottom {
+        align-items: center;
+    }
+    footer .legal > span {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 2px;
+    }
+    header {
+        position: relative;
+    }
+
+    header nav {
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 68px;
+        left: 0;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;
+        background: var(--main-black);
+        z-index: 1;
+    }
+
+    /* Navigation Styling */
+    header nav a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        transition: all .2s ease-in-out;
+    }
+
+    header nav a:hover {
+        color: var(--accent-orange);
+    }
+
+    .mobile-nav-active header nav {
+        display: block;
+    }
+
+    /* Header Intro Styling */
+    header section .intro {
+        position: relative;
+        text-align: center;
+    }
+
+    header nav h1 {
+        position: relative;
+        margin-top: 45px;
+        margin-bottom: 1rem;
+    }
+
+    header .intro img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Main Section About me */
+    main #projects .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+
+    .project-grid-box {
+        margin-bottom: 2rem;
+    }
+
+    main section .projects-grid .project-grid-box button {
+        position: static;
+        margin-top: 1rem;
+    }
+}
