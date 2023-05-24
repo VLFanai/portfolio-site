@@ -1,114 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="VL Fanai">
-        <meta name="descriptions" content="fanai.vl is a portfolio website design and build by VL Fanai providing freelancing UI design and front-end deveopment. Our service is designed to invite more startup in the State. With 2 years of experience in the industry, our team is dedicated to providing innovative product and services that will solve a problem or improve a user's life in some way. Visit us today to learn more about how we can help you achieve your goal in business and entrepreneurship.">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Welcome to my Site</title>
-    </head>
-    <body>
-        <header id="home">
-            <nav class="navbar">
-                <h1>fanai<span>.vl</span>
-                </h1>
-                <ul>
-                    <a target="_top" href="#home">HOME</a>
-                    <a target="_top" href="../about/index.html">ABOUT</a>
-                    <a target="_top" href="#">SKILLS</a>
-                    <a target="_top" href="../blog/index.html">BLOG</a>
-                    <a target="_top" href="#projects">PROJECTS</a>
-                    <a target="_top" href="#contacts">CONTACT</a>
-                </ul>
-            </nav>
-            <section class="intro">
-                <div class="desc">
-                    <h1>Hello, my name is VL</h1>
-                    <h2>I am a
-                        <span>Web Developer</span><br>From Mizoram</h2>
-                    <button>Hire me</button>
-                </div>
-                <div class="img">
-                    <img src="../images/man.png" alt="vl-fanai">
-                </div>
-            </section>
-            <section id="about">
-                <div class="about-me">
-                    <h1>About Me</h1>
-                    <p>I'm a 20-year-old BSc student from India who's passionate about web development. I specialize in front-end development and UI design, creating beautiful and user-friendly websites. In my free time, I enjoy drawing, singing, and reading, and my Christian faith guides my values and work ethic. I'm excited about learning new skills and growing as a developer.</p>
-                </div>
-            </section>
-        </header>
-        <main>
-            <section class="skillset">
-                <div class="progress">
-                    <div class="progress-bar" style="width:50%">
-                        <span>50%</span>
-                    </div>
-                </div>
-            </section>
-            <section id="projects">
-                <div class="projects-desc">
-                    <h1>Featured Projects</h1>
-                    <p>Projects hi chu tihian lo ruak rih mai rawh se. Nakinah Git vel khawih theih hunah kan ti tak tak ang.</p>
-                </div>
-                <div class="projects-grid">
-                    <div class="project-grid-box">
-                        <h1>Market Analysis</h1>
-                        <button class="read-more">Read more</button>
-                    </div>
-                    <div class="project-grid-box">
-                        <h1>PR & Marketing</h1>
-                        <button class="read-more">Read more</button>
-                    </div>
-                    <div class="project-grid-box">
-                        <h1>Consulting</h1>
-                        <button class="read-more">Read more</button>
-                    </div>
-                    <div class="project-grid-box">
-                        <h1>Business Planning</h1>
-                        <button class="read-more">Read more</button>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer id="contacts" class="top">
-            <img src="../Icon/fanai.vl_logo-2.png" alt="logo">
-            <div class="links">
-                <div>
-                    <h2>Platforms</h2>
-                    <a href="#">Directus Core</a>
-                    <a href="#">Open Data Platform</a>
-                    <a href="#">Feature List</a>
-                    <a href="#">Road Map</a>
-                    <a href="#">Marketplace</a>
-                </div>
-                <div>
-                    <h2>Contact</h2>
-                    <p>Name: F.Vanlalhmangaihsanga</p>
-                    <p>Address: Zohnuai, Lunglei</p>
-                    <p>Mizoram, INDIA</p>
-                    <p>Phone:
-                        <a href="#">+91-6009-204-725</a>
-                    </p>
-                    <p>Email:
-                        <a target="blank" href="mailto:vfanai0@gmail.com">vfanai0@gmail.com</a>
-                    </p>
-                </div>
-            </div>
-        </footer>
-        <footer class="bottom">
-            <div class="legal">
-                <span>© 2023 All rights reserved</span>
-                <a href="#">License</a>
-            </div>
-            <div class="links">
-                <a class="fa-brands fa-github"></a>
-                <a class="fa-brands fa-linkedin"></a>
-                <a class="fa-brands fa-docker"></a>
-            </div>
-        </footer>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Welcome</title>
+</head>
+<body>
+    <main>
+        <div class="header-info">
+            <p>Hello, my name is VL</p>
+            <h1 id="auto-type1"></h1>
+            <h2 style="color: var(--main-orange)" id="auto-type2"></h2>
+        </div>
+        <div class="theme-button">
+            <label class="switch">
+                <input type="checkbox" onchange="toggleTheme()" id="dark-mode-toggle">
+                <span class="slider"></span>
+              </label>
+        </div>
+        
+        <nav>
+            <li>
+                <a href="#" id="about" class="link">About</a>
+                <a href="#" id="services" class="link">Services</a>
+                <a href="#" id="blog" class="link">Blog</a>
+                <a href="#" id="projects" class="link">Projects</a>
+            </li>
+        </nav>
+
+        <div class="about-me">
+            <h1 style="color: var(--main-font)">About Me</h1>
+            <p class="about" style="color: var(--main-font)">Welcome to the world of freelance web development! I'm <span style="color: var(--main-orange)">VL Fanai</span>, a self-taught web developer from Mizoram, India. Currently pursuing a BSc degree at Lunglei Government College, I am dedicated to becoming a full-stack developer while focusing on front-end development. With a passion for coding and an eye for design, I specialize in building visually stunning and highly functional websites tailored to meet the unique needs of my clients. Alongside web development, I also enjoy drawing and singing, finding solace in peaceful environments. Despite being introverted, I am always eager to learn and explore new ideas. Excitingly, I have plans to launch a YouTube channel where I will share web development insights and showcase my artistic creations. Thank you for considering my services, and I look forward to collaborating with you to bring your ideas to life in the digital realm..</p>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="main.js"></script>
+</body>
 </html>
